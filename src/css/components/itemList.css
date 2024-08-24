@@ -1,0 +1,5 @@
+.itemList{
+    background-color: antiquewhite;
+    flex-grow: 1; /* Takes up the remaining space */
+    overflow-y: auto; 
+}

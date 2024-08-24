@@ -1,0 +1,54 @@
+.form{
+    background-color: rgb(204, 118, 5);
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+}
+
+.form-group{
+    padding: 5px;
+}
+
+.form form{
+    display: flex;
+}
+
+
+.itemLabelDropdown{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+}
+.itemLabelInput{
+
+}
+
+.dropoDown{
+    width: 60px;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 20px;
+    border: 0cap;
+    margin-left: 10px;
+    background-color: rgb(248, 226, 192);
+    text-align: center;
+}
+
+.itemInput{
+    /* margin-left: 10px; */
+    height: 30px;
+    width: 110px;
+    border: 0cap;
+    border-radius: 20px;
+    background-color: rgb(248, 226, 192);
+}
+
+.submitBtn{
+    height: 30px;
+    width: 80px;
+    padding: 7px;
+    border-radius: 20px;
+    border: 0cap;
+    background-color: rgb(120, 191, 224);
+}
