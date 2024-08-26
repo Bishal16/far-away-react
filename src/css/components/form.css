@@ -20,28 +20,26 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
 }
-.itemLabelInput{
 
-}
 
 .dropoDown{
     width: 60px;
     height: 30px;
     padding-left: 10px;
     border-radius: 20px;
-    border: 0cap;
+    border: none;
     margin-left: 10px;
     background-color: rgb(248, 226, 192);
     text-align: center;
 }
 
 .itemInput{
-    /* margin-left: 10px; */
     height: 30px;
-    width: 110px;
-    border: 0cap;
+    width: 130px;
+    border: none;
     border-radius: 20px;
     background-color: rgb(248, 226, 192);
+    text-align: center;
 }
 
 .submitBtn{
@@ -49,6 +47,14 @@
     width: 80px;
     padding: 7px;
     border-radius: 20px;
-    border: 0cap;
+    border: none;
     background-color: rgb(120, 191, 224);
+}
+
+
+.submitBtn:hover {
+    background-color: rgb(103, 184, 221);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transform: scale(1.05);
+    transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
 }
