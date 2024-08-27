@@ -1,8 +1,34 @@
-.header{
-    
-    color: rgb(52, 54, 54);
-    font-size: larger;
-    background-color: rgb(255, 157, 76);
-    padding: 15px;
-    text-align: center;
+/* Import Google Font */
+@import url("https://fonts.googleapis.com/css2?family=Nabla&display=swap");
+
+/* Define Font Palettes */
+@font-palette-values --blueNabla {
+  font-family: Nabla;
+  base-palette: 2; /* This is Nabla's blue palette */
+}
+
+@font-palette-values --greyNabla {
+  font-family: Nabla, sans-serif;
+  base-palette: 3; /* This is Nabla's grey palette */
+}
+
+/* Define Animation */
+@keyframes animate-palette {
+  from {
+    font-palette: --greyNabla;
+  }
+
+  to {
+    font-palette: --blueNabla;
+  }
+}
+
+/* Header Styles */
+.header {
+  font-family: "Nabla";
+  color: rgb(52, 54, 54);
+  font-size: 1.5rem;
+  background-color: rgb(255, 157, 76);
+  text-align: center;
+  animation: animate-palette 1s infinite alternate linear;
 }
