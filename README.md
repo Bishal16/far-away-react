@@ -1,4 +1,4 @@
-# Far Away React
+# Far Away
 
 A React application for managing and tracking items. This project allows users to add items, mark them as packed, and view packing statistics.
 
