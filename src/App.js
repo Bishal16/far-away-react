@@ -3,7 +3,7 @@ import Form from './components/form';
 import ItemList from './components/itemList';
 import Stats from './components/stats';
 import './App.css'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 function App() {
 
   const[items, setItems] = useState([]);
@@ -11,17 +11,12 @@ function App() {
 
   
   function handleAddItem (newItem){
-    // console.log("before new item")
-    // console.log(items);
     setItems(items => [...items, newItem])
-    setPacked(items => {
-
-      return 11;
-    })
   }  
 
   function handleDeleteBtn(id){
     setItems((items) => items.filter((item) => item.id !== id ));
+    console.log(items)
   }
 
   function handleCheck(id) {
@@ -29,7 +24,13 @@ function App() {
         prevItems.map(item => item.id === id ? { ...item, packed: !item.packed } : item                
         )
     );
-};
+  } 
+  useEffect(() => {
+    const total = items.length;
+    const packedCount = items.filter(item => item.packed).length;
+    const percent = total === 0 ? 0 : ((packedCount / total) * 100).toFixed(2);
+    setPacked(percent);
+  }, [items]);
 
 
   return (
